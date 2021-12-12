@@ -1,6 +1,20 @@
-# Lista
+# Angular Tasks & Contacts Lists Project
+
+This Project is composed by Angular Framework. It's formed by two pages, one page is composed by a 'Tasks Lists', that is works like a 'To do List'; the second page is composed by a 'Contacts List' that includes all the user information like adress, phone number, e-mail, etc.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+
+## Project Overview: 
+
+![Screenshot](List_01.png)
+![Screenshot](List_02.png)
+![Screenshot](Contact_01.png)
+![Screenshot](Contact_02.png)
+
+## Codes Components
+
+To acess the project code components navigate to:
+-> src > app
 
 ## Development server
 
