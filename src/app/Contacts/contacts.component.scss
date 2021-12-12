@@ -1,0 +1,104 @@
+@import "../../styles.scss";
+
+section {
+    
+    color: $primary_text;
+       
+        label {
+            margin-top: 14px;
+            margin-right: 20px;
+        }
+
+        .area-contacts {
+           margin-bottom: 1.5rem;
+        }
+
+        .area-btn {
+            display: flex;
+            margin-left: 63px;
+        }
+
+        input {
+
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+
+        }
+
+
+        #name {
+            height: 24px;
+            width: 415px;
+            margin-left: 20px;
+            
+        }
+
+        #phone {
+            height: 24px;
+            width: 418px;
+            margin-bottom: 40px;
+            
+        }
+
+        #street {
+            height: 24px;
+            width: 418px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+            margin-left: 30px;
+            
+        }
+
+        #additional-adress {
+            height: 24px;
+            width: 377px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+        }
+
+        #neighborhood {
+            height: 24px;
+            width: 419px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+            margin-left: 15px;
+        }
+
+        #city {
+            height: 24px;
+            width: 420px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+            margin-left: 6px;
+        }
+
+        #zipCode {
+            height: 24px;
+            width: 420px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+            margin-bottom: 8px;
+            margin-left: 23px;
+        }
+       
+        .input-error {
+            border: 1px solid $red;
+        }
+
+        .input-filled {
+            visibility: hidden;
+        }
+
+        .input-mandatory {
+            color: $red;
+            font-size: 0.8rem;
+            margin-left: 63px;
+            visibility: visible;
+        }
+
+}

@@ -1,0 +1,68 @@
+<section>
+
+    <form [formGroup]="formContacts" (ngSubmit)="save()">
+
+        <div class="area-contacts">
+
+            <div>
+
+                <div>
+                    <label>Name :</label>
+                    <input type="text" id="name" name="name" formControlName="name" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+
+                <div>
+                    <label>Phone :</label>
+                    <input type="number" id="phone" name="phone" formControlName="phone" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+
+                <div>
+                    <label>Street :</label>
+                    <input type="text" id="street" name="street" formControlName="street" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+                
+                <div>
+                    <label>Additional Adress :</label>
+                    <input type="text" id="additional-adress" name="additional-adress" formControlName="additionalAdress" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+
+                <div>
+                    <label>Neighborhood :</label>
+                    <input type="text" id="neighborhood" name="neighborhood" formControlName="neighborhood" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+
+                <div>
+                    <label>City :</label>
+                    <input type="text" id="city" name="city" formControlName="city" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+            
+                <div>
+                    <label>Zip Code :</label>
+                    <input type="text" id="zipCode" name="zipCode" formControlName="zipCode" required [ngClass]="{'input-error': contact?.invalid && contact?.dirty}" />
+                </div>
+
+            </div>
+
+            <span [ngClass]="{'input-mandatory': contact?.invalid && contact?.dirty, 'input-filled': !contact?.dirty || !contact?.invalid && contact?.dirty }">
+                *All informations must be completed!
+            </span>
+
+        </div>
+
+        <div class="area-btn">
+
+            <!-- BUTTON(I - "Salvar") Component: -->
+            <button-action [titleButton]="titleButton"></button-action>
+
+        </div>
+
+            <!-- LIST_2 Component: -->
+        <listcontacts [dataList]="allContacts"></listcontacts>
+
+    </form>
+
+        
+    <!-- BUTTON(II - "Limpar") Component: -->
+    <button-action [titleButton]="titleButtonContacts" (buttonEvent)="clear()"></button-action>
+
+</section>

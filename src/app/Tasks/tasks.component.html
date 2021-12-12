@@ -1,0 +1,36 @@
+<section>
+
+    <form [formGroup]="formTasks" (ngSubmit)="save()">
+
+        <div class="area-text">
+
+            <div>
+
+                <label>Task :</label>
+                <input type="text" id="task" name="task" formControlName="task" required [ngClass]="{'input-error': task?.invalid && task?.dirty}" />
+
+            </div>
+
+            <span [ngClass]="{'input-mandatory': task?.invalid && task?.dirty, 'input-filled': !task?.dirty || !task?.invalid && task?.dirty }">
+                *A Task must be informed!
+            </span>
+
+        </div>
+
+        <div class="area-btn">
+
+            <!-- BUTTON(I - "Salvar") Component: -->
+            <button-action [titleButton]="titleButton"></button-action>
+
+        </div>
+
+            <!-- LIST Component: -->
+        <list [dataList]="allTasks"></list>
+
+    </form>
+
+        
+    <!-- BUTTON(II - "Limpar") Component: -->
+    <button-action [titleButton]="titleButtonList" (buttonEvent)="clear()"></button-action>
+
+</section>

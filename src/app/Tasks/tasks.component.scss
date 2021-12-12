@@ -1,0 +1,43 @@
+@import "../../styles.scss";
+
+section {
+    
+    color: $primary_text;
+
+        label {
+            margin-top: 14px;
+            margin-right: 20px;
+        }
+
+        .area-text {
+           margin-bottom: 1.5rem;
+        }
+
+        .area-btn {
+            display: flex;
+            margin-left: 63px;
+        }
+
+        input {
+            height: 28px;
+            width: 300px;
+            border-radius: 0;
+            border: 1px solid $primary_text;
+        }
+
+        .input-error {
+            border: 1px solid $red;
+        }
+
+        .input-filled {
+            visibility: hidden;
+        }
+
+        .input-mandatory {
+            color: $red;
+            font-size: 0.8rem;
+            margin-left: 63px;
+            visibility: visible;
+        }
+
+}
